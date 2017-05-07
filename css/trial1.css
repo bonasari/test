@@ -1,0 +1,149 @@
+/*@media only screen and (min-width: 768px) {*/
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+}
+.category_container{
+    display: block;
+    margin-left: 33px;
+    overflow: hidden;
+    width: auto;
+    padding-top: 30px;
+}
+
+/*.category_item{
+    float: left;
+    width: 8%;
+    background-color:gray;
+    padding:8px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    color:black;
+    margin:1px;
+    border-radius: 4px 0 4px 0;
+}
+.category_item:hover{
+    background-color: rgb(70, 200,0);
+    color: white;
+}*/
+.catmenu{
+    text-align: center;
+    list-style: none;
+    margin-left:50px;
+}
+.category_item{
+    float: left;
+    width: 9%;
+    /*background-color:rgb(211, 211, 211);*/
+    background-color: #f2f2f2;
+/*    padding:8px;*/
+    padding:3px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 12px;
+    color:black;
+    margin:0.5px;
+/*    border-radius: 5px 0 5px 0;*/
+    border-radius: 10px 0 10px 0;
+}
+.category_item:hover {
+    /*background-color: rgb(124, 252, 0);*/
+    background-color: #76e895 !important;
+    color: white;
+}
+.category_item:active {
+    /*background-color: rgb(124, 252, 0);*/
+    background-color: #76e895;
+    color: white !important;
+}
+
+.produk_item{
+    float:left;
+    padding:5px;
+    transition: all 1.0s ease;
+    
+}
+
+.hide{
+    transform: scale(0);
+    width: 0;
+    padding:0;
+    transition: all 0.5s ease;
+    z-index: 1;
+}
+.section-header{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 50px;
+}
+
+.section-header h2{
+    font-size: 40px;
+    color:#45aed6;
+}
+.section-header p{
+    font-size: 20px;
+}
+/*codepen*/
+.grid figure {
+  font-size: 16px;
+  overflow: hidden;
+  display: inline-block;
+/*  margin-bottom: 8px;*/
+  width: calc(50% - 4px);
+/*  margin-right: 8px;*/
+}
+
+.grid figure:nth-of-type(2n) {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 50em) {
+  .grid figure {
+/*    width: calc(25% - 6px);*/
+    width: calc(25% - 80px);
+  }
+  
+  .grid figure:nth-of-type(2n) {
+    margin-right: 8px;
+  }
+  
+  .grid figure:nth-of-type(4n) {
+    margin-right: 0;
+  }
+}
+
+.grid figure:hover img {
+  transform: scale(1.15);
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  border: none;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  background: #ccc;
+  transition: transform .2s ease-in-out;
+}
+
+.p .grid figure {
+  display: inline;
+  font-size: 13px;
+  margin: 0;
+}
+
+.p {
+  text-align: center;
+  font-size: 13px;
+  padding-top: 100px;
+}
+/*end codepen*/
+
