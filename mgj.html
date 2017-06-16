@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
 </head>
-<body style="padding:0px; margin:0px; background-image: transparent;font-family:'Open Sans',sans-serif,arial,helvetica,verdana">
+<body style="padding:0px; margin:0px; background-image: url(images/background.jpg);font-family:'Open Sans',sans-serif,arial,helvetica,verdana">
     
     
     <!-- #region Jssor Slider Begin -->
@@ -55,7 +55,10 @@
                 $SpacingX: 8,
                 $SpacingY: 8,
                 $Align: 360
-              }
+              },
+              $CloseButtonOptions: {
+                $Class: $JssorCloseButton$
+              }  
             };
             
             
@@ -81,7 +84,7 @@
         };
     </script>
     <style>
-        /* jssor slider arrow navigator skin 06 css */
+        /* jssor slider arrow navigator skin 05 css */
         /*
         .jssora05l                  (normal)
         .jssora05r                  (normal)
@@ -149,6 +152,13 @@
                 <img data-u="thumb" src="images/MGJ/thumb-07.jpg" />
             </div>
     </div>
+            <style>
+        .closeButton { background-image: url(../img/close.png); }
+        .closeButton:hover { background-position: -30px 0px; }
+    </style>
+    <div u="close" class="closeButton" style="position: absolute; top: 0px; right: 1px;
+        width: 30px; height: 30px; background-color: #000; cursor: pointer; display: none; z-index: 2;">
+    </div>
             <a data-u="any" href="https://www.jssor.com" style="display:none">javascript slider</a>
       
               
@@ -170,7 +180,6 @@
         <span data-u="arrowright" class="jssora05r" style="top:258px;right:8px;width:40px;height:40px;"></span>
     </div>
     <script type="text/javascript">jssor_1_slider_init();</script>
-    <script src="js/jquery.blueimp-gallery.min.js"></script>
     <!-- #endregion Jssor Slider End -->
 </body>
 </html>
